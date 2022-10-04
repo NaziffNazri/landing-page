@@ -7,16 +7,14 @@ import {
   MDBNavbarNav,
   MDBNavbarItem,
   MDBNavbarLink,
-  MDBNavbarToggler,
   MDBContainer,
-  MDBIcon,
-  MDBCollapse,
   MDBBtn,
-  MDBNavbarBrand
+  MDBNavbarBrand,
 } from 'mdb-react-ui-kit';
 
-export default function App() {
+export default function Header() {
   const [showBasic, setShowBasic] = useState(false);
+
 
   function sayHello() {
     alert('Hello!');
@@ -28,17 +26,8 @@ export default function App() {
 
   return (
     <header>
-
-
-      <MDBNavbar expand='lg' light bgColor='white' fixed>
-        <MDBContainer>
-          <MDBNavbarToggler
-            aria-controls='navbarExample01'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
-          >
-            <MDBIcon fas icon='bars' />
-          </MDBNavbarToggler>
+      <MDBNavbar expand='lg' light bgColor='white' sticky>
+        <MDBContainer >
 
           <MDBNavbarBrand href='#home' active>
             <img
@@ -52,13 +41,13 @@ export default function App() {
           <MDBNavbarNav className="justify-content-end">
 
             <MDBNavbarItem>
-              <MDBNavbarLink href='#service'>Service</MDBNavbarLink>
+              
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#about'>About Us</MDBNavbarLink>
+              <MDBNavbarLink href='/about'>About Us</MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#contact'>Contact</MDBNavbarLink>
+              <MDBNavbarLink href='/contact'>Contact</MDBNavbarLink>
             </MDBNavbarItem>
 
           </MDBNavbarNav>
@@ -68,6 +57,8 @@ export default function App() {
 
 
 
+
+      {/* Carousel Background */}
 
       <div
         className='p-5 text-center bg-image mx-auto d-block"'
@@ -88,6 +79,31 @@ export default function App() {
           </div>
         </div>
       </div>
+
+      {/* <MDBCarousel showControls fade>
+        
+        <MDBCarouselItem 
+          className='d-block mx-auto text-center bg-image w-100'
+          itemId={1}
+          src={imageBg}
+          style={{ height: '720px' }}
+        />
+        <MDBCarouselItem
+          className='w-100 d-block'
+          itemId={2}
+          src='https://mdbootstrap.com/img/new/slides/042.jpg'
+          alt='...'
+        />
+        <MDBCarouselItem
+          className='w-100 d-block'
+          itemId={3}
+          src='https://mdbootstrap.com/img/new/slides/043.jpg'
+          alt='...'
+        />
+
+        
+      </MDBCarousel> */}
+      
     </header>
   );
 }

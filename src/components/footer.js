@@ -3,7 +3,7 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-k
 
 export default function Footer() {
   return (
-    <MDBFooter bgColor='light' className='text-center text-lg-start text-mutedp-4 border-bottom pt-4' >
+    <MDBFooter bgColor='warning' className='text-center text-black text-lg-start  pt-4' >
 
 
       <section className=''>
@@ -21,22 +21,22 @@ export default function Footer() {
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Useful Links</h6>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='#service' className='text-reset'>
                   Service
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='#about' className='text-reset'>
                   About Us
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='#contact' className='text-reset'>
                   Contact
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='#client' className='text-reset'>
                   Client
                 </a>
               </p>
@@ -97,7 +97,7 @@ export default function Footer() {
         </MDBContainer>
       </section>
 
-      <div className='text-center p-2' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
+      <div className='text-center p-3 border-top border-white border-2' style={{ backgroundColor: 'rgba(0, 0, 0, 0.06)' }}>
         © 2022 Copyright :
         <a className='text-reset fw-bold' href=''>
           Sri Duyong Photo

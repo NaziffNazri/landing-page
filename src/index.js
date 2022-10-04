@@ -1,22 +1,15 @@
 import React from 'react';
 import { createRoot } from "react-dom/client";
+import App from './App.js';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import Header from './components/header.js';
-import Service from './components/service';
-import About from './components/about.js';
-import Contact from './components/contact.js';
-import Footer from './components/footer.js';
+
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <Header />
-    <Service/>
-    <About/>
-    <Contact/>
-    <Footer/>
+    <App/>
   </React.StrictMode>
 );
 
